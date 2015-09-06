@@ -57,7 +57,7 @@ available configuration.
 
 =head2 gnu_getopt
 
-This sets C<gnu_compat> to allow C<--opt=> for setting an empty option,
+This sets C<gnu_compat> to allow C<--opt=> for setting an empty string option,
 C<bundling> to allow short options to be bundled together, C<permute> to allow
 specifying options before or after other arguments, and C<no_getopt_compat> to
 disallow C<+> for specifying options.
