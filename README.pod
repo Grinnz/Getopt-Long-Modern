@@ -22,7 +22,7 @@ the correct incantations.
 Only the C<GetOptions> function from L<Getopt::Long> is exported. Additional
 L<Getopt::Long> configuration may be passed as import options.
 
- use Getopt::Long::Modern 'auto_help', 'auto_version', 'passthrough';
+ use Getopt::Long::Modern qw(auto_help auto_version passthrough);
 
 For any more advanced usage, you should probably use L<Getopt::Long> directly.
 
