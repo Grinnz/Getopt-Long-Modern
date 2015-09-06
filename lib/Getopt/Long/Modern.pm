@@ -8,7 +8,7 @@ require Exporter;
 our $VERSION = '0.001';
 
 our @ISA = 'Exporter';
-our @EXPORT = qw(GetOptions);
+our @EXPORT = 'GetOptions';
 
 my @config = qw(default gnu_getopt no_auto_abbrev no_ignore_case);
 
