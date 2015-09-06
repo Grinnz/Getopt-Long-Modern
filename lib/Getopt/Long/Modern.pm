@@ -2,7 +2,7 @@ package Getopt::Long::Modern;
 
 use strict;
 use warnings;
-use Getopt::Long 'GetOptions', 'Configure';
+use Getopt::Long 'GetOptions';
 require Exporter;
 
 our $VERSION = '0.001';
@@ -16,8 +16,8 @@ sub import {
 	my $class = shift;
 	local $Exporter::ExportLevel = 1;
 	$class->SUPER::import;
-	Configure(@config);
-	Configure(@_) if @_;
+	Getopt::Long::Configure(@config);
+	Getopt::Long::Configure(@_) if @_;
 }
 
 1;
