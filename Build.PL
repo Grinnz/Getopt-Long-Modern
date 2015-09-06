@@ -83,7 +83,7 @@ EOW
       "recursive_test_files" => 1,
       "requires" => {
         "Exporter" => 0,
-        "Getopt::Long" => 0,
+        "Getopt::Long" => "2.24",
         "perl" => "5.006"
       },
       "test_requires" => {
