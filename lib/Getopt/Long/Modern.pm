@@ -10,7 +10,7 @@ our $VERSION = '0.001';
 our @ISA = 'Exporter';
 our @EXPORT = qw(GetOptions);
 
-my @config = qw(gnu_getopt no_auto_abbrev no_ignore_case);
+my @config = qw(default gnu_getopt no_auto_abbrev no_ignore_case);
 
 sub import {
 	my $class = shift;
@@ -42,7 +42,7 @@ amount of typing needed to get modern defaults, and to avoid having to remember
 the correct incantations.
 
 Only the C<GetOptions> function from L<Getopt::Long> is exported. Additional
-L<Getopt::Long> configuration may be passed as import options.
+L<Getopt::Long> configuration may be passed as import parameters.
 
  use Getopt::Long::Modern qw(auto_help auto_version pass_through);
 
@@ -51,7 +51,8 @@ For any more advanced usage, you should probably use L<Getopt::Long> directly.
 =head1 DEFAULTS
 
 L<Getopt::Long::Modern> currently sets the following configuration options by
-default.
+default. See L<Getopt::Long/"Configuring Getopt::Long"> for more details on
+available configuration.
 
 =head2 gnu_getopt
 
