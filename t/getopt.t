@@ -55,7 +55,7 @@ use Getopt::Long::Modern;
 }
 
 # extra options
-Getopt::Long::Modern->import('passthrough');
+Getopt::Long::Modern->import('pass_through');
 {
 	local @ARGV = qw(-f --bar=baz --baz abc);
 	GetOptions(
