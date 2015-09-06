@@ -1,26 +1,4 @@
-package Getopt::Long::Modern;
-
-use strict;
-use warnings;
-use Getopt::Long 'GetOptions', 'Configure';
-require Exporter;
-
-our $VERSION = '0.001';
-
-our @ISA = 'Exporter';
-our @EXPORT = qw(GetOptions);
-
-my @config = qw(gnu_getopt no_auto_abbrev no_ignore_case);
-
-sub import {
-	my $class = shift;
-	local $Exporter::ExportLevel = 1;
-	$class->SUPER::import;
-	Configure(@config);
-	Configure(@_) if @_;
-}
-
-1;
+=pod
 
 =head1 NAME
 
@@ -93,3 +71,5 @@ This is free software, licensed under:
 =head1 SEE ALSO
 
 L<Getopt::Long::Descriptive>, L<Getopt::Again>, L<Opt::Imistic>
+
+=cut
