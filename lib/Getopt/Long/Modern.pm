@@ -39,7 +39,8 @@ Getopt::Long::Modern - Use Getopt::Long with modern defaults
 
 L<Getopt::Long::Modern> is a simple wrapper of L<Getopt::Long> to reduce the
 amount of typing needed to get modern defaults, and to avoid having to remember
-the correct incantations.
+the correct incantations. See L<Getopt::Long/"Summary of Option Specifications">
+for details on specifying options using L<Getopt::Long>.
 
 Only the C<GetOptions> function from L<Getopt::Long> is exported. Additional
 L<Getopt::Long> configuration may be passed as import parameters.
