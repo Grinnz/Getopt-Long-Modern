@@ -68,7 +68,7 @@ disallow C<+> for specifying options.
 This disables the functionality that automatically allows abbreviated versions
 of any option, because no one is ever going to specify C<--foo> as C<--fo>, and
 it is not useful when you have multiple options that abbreviate to the same
-single-letter option. When is desired to have a single-letter short option
+single-letter option. When it is desired to have a single-letter short option
 versions available, this can be specified explicitly with the normal C<|>
 syntax.
 
