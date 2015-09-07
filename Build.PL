@@ -77,7 +77,7 @@ EOW
         "Dan Book <dbook\@cpan.org>"
       ],
       "dist_name" => "Getopt-Long-Modern",
-      "dist_version" => "0.001",
+      "dist_version" => "0.002",
       "license" => "artistic_2",
       "module_name" => "Getopt::Long::Modern",
       "recursive_test_files" => 1,
