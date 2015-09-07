@@ -3,7 +3,7 @@ package Getopt::Long::Modern;
 use strict;
 use warnings;
 use Getopt::Long 'GetOptions';
-require Exporter;
+use Exporter ();
 
 our $VERSION = '0.002';
 
@@ -14,8 +14,7 @@ my @config = qw(default gnu_getopt no_auto_abbrev no_ignore_case);
 
 sub import {
 	my $class = shift;
-	local $Exporter::ExportLevel = 1;
-	$class->SUPER::import;
+	$class->export_to_level(1, $class, 'GetOptions');
 	Getopt::Long::Configure(@config);
 	Getopt::Long::Configure(@_) if @_;
 }
