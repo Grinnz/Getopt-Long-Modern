@@ -46,7 +46,7 @@ Only the C<GetOptions> function from L<Getopt::Long> is exported. Additional
 L<Getopt::Long> configuration may be passed as import parameters.
 
  use Getopt::Long::Modern qw(auto_help auto_version pass_through);
- # perl 5.8.1+ or Getopt::Long 2.33 required for auto_help and auto_version
+ # perl 5.8.1+ or Getopt::Long 2.33+ required for auto_help and auto_version
 
 For any more advanced usage, you should probably use L<Getopt::Long> directly.
 
