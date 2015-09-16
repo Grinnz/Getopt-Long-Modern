@@ -1,4 +1,5 @@
 {{$NEXT}}
+  - Bump required version of Getopt::Long to 2.37 for important bugfixes
 
 0.002     2015-09-07 02:51:02 EDT
   - Use export_to_level instead of $Exporter::ExportLevel
