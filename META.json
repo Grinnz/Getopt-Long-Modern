@@ -32,14 +32,14 @@
       "develop" : {
          "requires" : {
             "Dist::Zilla::Plugin::MakeMaker::Fallback" : "0",
-            "Dist::Zilla::PluginBundle::Author::DBOOK" : "0.018",
+            "Dist::Zilla::PluginBundle::Author::DBOOK" : "0.019",
             "Test::Pod" : "1.41"
          }
       },
       "runtime" : {
          "requires" : {
             "Exporter" : "0",
-            "Getopt::Long" : "2.24",
+            "Getopt::Long" : "2.37",
             "perl" : "5.006"
          }
       },
@@ -52,7 +52,7 @@
    "provides" : {
       "Getopt::Long::Modern" : {
          "file" : "lib/Getopt/Long/Modern.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       }
    },
    "release_status" : "stable",
@@ -67,7 +67,7 @@
          "web" : "https://github.com/Grinnz/Getopt-Long-Modern"
       }
    },
-   "version" : "0.002",
+   "version" : "0.003",
    "x_contributors" : [
       "Dan Book <grinnz@grinnz.com>"
    ]
