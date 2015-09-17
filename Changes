@@ -1,4 +1,5 @@
 {{$NEXT}}
+  - Switch installer to ExtUtils::MakeMaker
 
 0.003     2015-09-16 18:47:06 EDT
   - Bump required version of Getopt::Long to 2.37 for important bugfixes
