@@ -1,4 +1,5 @@
 {{$NEXT}}
+  - Ignore :config import parameter if specified accidentally
 
 0.004     2015-09-16 20:28:17 EDT
   - Switch installer to ExtUtils::MakeMaker

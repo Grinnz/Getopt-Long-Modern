@@ -15,6 +15,7 @@ my @config = qw(default gnu_getopt no_auto_abbrev no_ignore_case);
 sub import {
 	my $class = shift;
 	$class->export_to_level(1);
+	shift if @_ and $_[0] eq ':config';
 	Getopt::Long::Configure(@config, @_);
 }
 
