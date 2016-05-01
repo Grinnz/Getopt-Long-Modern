@@ -47,6 +47,9 @@ L<Getopt::Long> configuration may be passed as import parameters.
  use Getopt::Long::Modern qw(auto_help auto_version pass_through);
 
 For any more advanced usage, you should probably use L<Getopt::Long> directly.
+The equivalent L<Getopt::Long> configuration to using this module is:
+
+ use Getopt::Long qw(:config gnu_getopt no_auto_abbrev no_ignore_case);
 
 =head1 DEFAULTS
 
