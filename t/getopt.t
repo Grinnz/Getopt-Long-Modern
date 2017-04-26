@@ -17,17 +17,17 @@ use Getopt::Long::Modern;
 	is_deeply \@baz, [1,2], 'option is set';
 }
 
-# no_auto_abbrev, no_ignore_case, permute
+# no_ignore_case, permute
 {
-	local @ARGV = qw(--Foo abc --ba baz);
+	local @ARGV = qw(--Foo abc --bar baz);
 	local $SIG{__WARN__} = sub {};
 	GetOptions(
 		'foo'   => \my $foo,
 		'bar=s' => \my $bar,
 	);
-	is_deeply \@ARGV, ['abc','baz'], 'argument left';
+	is_deeply \@ARGV, ['abc'], 'argument left';
 	ok !$foo, 'option is not set';
-	ok !$bar, 'option is not set';
+	is $bar, 'baz', 'option is set';
 }
 
 # bundling
