@@ -28,7 +28,7 @@ L<Getopt::Long> configuration may be passed as import parameters.
 For any more advanced usage, you should probably use L<Getopt::Long> directly.
 The equivalent L<Getopt::Long> configuration to using this module is:
 
- use Getopt::Long qw(:config gnu_getopt no_auto_abbrev no_ignore_case);
+ use Getopt::Long qw(:config gnu_getopt no_ignore_case);
 
 =head1 DEFAULTS
 
@@ -42,15 +42,6 @@ This sets C<gnu_compat> to allow C<--opt=> for setting an empty string option,
 C<bundling> to allow short options to be bundled together, C<permute> to allow
 specifying options before or after other arguments, and C<no_getopt_compat> to
 disallow C<+> for specifying options.
-
-=head2 no_auto_abbrev
-
-This disables the functionality that automatically allows abbreviated versions
-of any option, because no one is ever going to specify C<--foo> as C<--fo>, and
-it is not useful when you have multiple options that abbreviate to the same
-single-letter option. When it is desired to have a single-letter short option
-versions available, this can be specified explicitly with the normal C<|>
-syntax.
 
 =head2 no_ignore_case
 
