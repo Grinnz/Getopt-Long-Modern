@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.000     2017-04-26 22:00:07 EDT
   - Breaking change: no_auto_abbrev is no longer included in the default option
     set, in order to better match how options are handled by modern unix tools.
   - Ignore :config import parameter if specified accidentally
