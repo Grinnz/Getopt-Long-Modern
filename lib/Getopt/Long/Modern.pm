@@ -5,7 +5,7 @@ use warnings;
 use Getopt::Long 'GetOptions';
 use Exporter ();
 
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 
 our @ISA = 'Exporter';
 our @EXPORT = 'GetOptions';
